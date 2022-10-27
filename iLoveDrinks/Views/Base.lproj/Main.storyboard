@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G7s-0M-tK6">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0dt-2O-zxc">
+            <objects>
+                <tabBarController id="G7s-0M-tK6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GIf-32-fbi">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <color key="barTintColor" systemColor="systemBackgroundColor"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="B51-2U-Ibm" kind="relationship" relationship="viewControllers" id="1TE-x3-Feu"/>
+                        <segue destination="Nx9-oi-4ht" kind="relationship" relationship="viewControllers" id="KyV-B4-NTY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pWb-I7-sne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-35" y="-42"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="LHC-lP-p3g">
+            <objects>
+                <navigationController id="Nx9-oi-4ht" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" id="Pe1-P7-jsc">
+                        <imageReference key="image" image="suit.heart" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="DzL-1m-eSr">
+                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Xi1-S4-ZpQ" kind="relationship" relationship="rootViewController" id="ZyV-Zx-AR6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Fc-1v-3RO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531" y="709"/>
+        </scene>
+        <!--Favourites-->
+        <scene sceneID="0GD-Jc-JhM">
+            <objects>
+                <viewController title="Favourites" id="Xi1-S4-ZpQ" customClass="FavoritesViewController" customModule="iLoveDrinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bsb-SG-bfB">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kdu-Lk-O4c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Favorites" largeTitleDisplayMode="always" id="zFX-sT-yfn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxp-Ic-2XI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531" y="1464"/>
+        </scene>
+        <!--Browse-->
+        <scene sceneID="nKN-Jh-ZLf">
+            <objects>
+                <navigationController id="B51-2U-Ibm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Browse" image="doc.text.magnifyingglass" catalog="system" id="wNn-0y-fOm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="sbJ-Sx-bOW">
+                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fWk-RQ-r6A" kind="relationship" relationship="rootViewController" id="edp-oU-1Dh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="04o-Bc-PlZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-471" y="709"/>
+        </scene>
+        <!--Browse-->
+        <scene sceneID="2cs-53-uc0">
+            <objects>
+                <viewController title="Browse" id="fWk-RQ-r6A" customClass="HomeViewController" customModule="iLoveDrinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L0G-BC-tBx">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="A8d-br-PT4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Browse" largeTitleDisplayMode="always" id="kkj-yU-8pO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MmB-tH-0lQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-472" y="1465"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc.text.magnifyingglass" catalog="system" width="110" height="128"/>
+        <image name="suit.heart" catalog="system" width="128" height="107"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
